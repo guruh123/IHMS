@@ -47,7 +47,7 @@
                     </li>
 
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="fas fa-chart-bar"></i>
+							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Clinical Management</span>
 						</a>
                         <ul aria-expanded="false">
@@ -60,12 +60,15 @@
                     </li>
 
 					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="fas fa-map-marker-alt"></i>
+							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Asset Tracking</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="index.html">Patient Monitoring</a></li>
-							<li><a href="doctors.html">Asset Monitoring</a></li>
+							<li><a href="index.html">Dokter</a></li>
+							<li><a href="doctors.html">Perawat</a></li>
+							<li><a href="doctors-details.html">Karyawan</a></li>
+							<li><a href="doctors-review.html">Activity Report</a></li>
+							<li><a href="patient-details.html">Data Log Tenaga Medis</a></li>
 						</ul>
                     </li>	
 	</div>

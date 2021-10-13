@@ -12,5 +12,4 @@
     	<link href="<?=templates()?>vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="<?=templates()?>css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f4559b5252.js" crossorigin="anonymous"></script>
-    
 </head>
