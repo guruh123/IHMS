@@ -1,17 +1,18 @@
 <div class="deznav">
     <div class="deznav-scroll">
 		<ul class="metismenu" id="menu">
+		<button type="button" class="btn btn-success" width="5" height="2">+ Quick Add</button>
             <li><a href="javascript:void()" aria-expanded="false">
-				<i class="fas fa-home"></i>
+				<i class="flaticon-381-networking"></i>
 				<span class="nav-text">Dashboard</span>
 			</a>
 
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="fas fa-procedures"></i>
+							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Pasien</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="index.html">Pasien Bayi</a></li>
+							<li><a href="/IHAM/_halaman/pasien.php">Pasien</a></li>
 							<li><a href="doctors.html">Pasien Dewasa</a></li>
 							<li><a href="doctors-details.html">Pasien anak - anak</a></li>
 							<li><a href="doctors-review.html">Rekam Medis</a></li>
@@ -21,7 +22,7 @@
                     </li>
 
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="fas fa-user-md"></i>
+							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Tenaga Medis</span>
 						</a>
                         <ul aria-expanded="false">
@@ -34,7 +35,7 @@
                     </li>
 
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="fas fa-briefcase-medical"></i>
+							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Inventory</span>
 						</a>
                         <ul aria-expanded="false">
@@ -59,7 +60,7 @@
 						</ul>
                     </li>
 
-					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Asset Tracking</span>
 						</a>
