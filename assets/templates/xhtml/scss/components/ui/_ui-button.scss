@@ -43,7 +43,7 @@ button{
 }
 .sharp {
 	min-width: 40px;
-    padding: 7px;
+    padding: 5px;
     height: 40px;
     min-height: 40px;
 }
@@ -480,9 +480,6 @@ button{
 .btn-lg{
     padding: 1rem 2rem;
     font-size: 1.125rem !important;
-	@include respond('phone') {
-		 padding: 0.75rem 1.25rem;
-	}
 }
 
 .btn-xl{
@@ -517,9 +514,6 @@ button{
     margin: -0.5rem 0.75rem -0.5rem -1.188rem;
     padding: 0.5rem 0.80rem 0.5rem;
     float: left;
-	@include respond('tab-land') {
-		margin: -0.5rem 0.75rem -0.5rem -0.800rem;
-	}
 }
 [direction="rtl"]{
 	.btn-icon-left {

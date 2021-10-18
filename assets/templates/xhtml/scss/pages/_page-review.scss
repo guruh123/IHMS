@@ -51,7 +51,7 @@
 		}
 	}
 	.media{
-		@include respond('tab-port') {
+		@include respond('tab-land') {
 			display:block !important;
 		}
 		

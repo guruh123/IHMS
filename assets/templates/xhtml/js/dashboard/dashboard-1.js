@@ -283,8 +283,8 @@
         },
 		
 		colors:['#ff2c53', '#209f84', '#ff5c00'],
-		series: [71, 63, 90],
-		labels: ['New', 'Recover', 'In Treatment'],
+		series: [64, 36],
+		labels: ['Bayi', 'Dewasa'],
 		legend: {
 			fontSize: '16px',  
 			show: false,

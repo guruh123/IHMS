@@ -697,7 +697,7 @@ if(jQuery('#doughnut_chart').length > 0 ){
 			weight: 5,	
             defaultFontFamily: 'Poppins',
             datasets: [{
-                data: [45, 25, 20],
+                data: [64, 36],
                 borderWidth: 3, 
 				borderColor: "rgba(255,255,255,1)",
                 backgroundColor: [

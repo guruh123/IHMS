@@ -106,11 +106,7 @@
 		@include transitionMedium;
 		cursor:pointer;
 		box-shadow:0 13px 25px 0 rgba(0,0,0,0.13);
-		@include respond('phone') {
-			width: 45px;
-			height: 45px;
-			line-height: 45px;
-		}	
+		
 		&:hover{
 			background: #450b5a;
 			color: #fff;
@@ -119,15 +115,9 @@
 	}
 	.owl-next{
 		right:-45px;
-		@include respond('phone') {
-			right:-25px;
-		}	
 	}
 	.owl-prev{
 		left:-45px;
-		@include respond('phone') {
-			left:-25px;
-		}	
 	}
 }
 

@@ -1,6 +1,7 @@
 <?php
  $title="tabel";
 ?>
+
 <?=content_open_default('TABEL BARANG')?>
 <table class="table table-hover">
                 <tr>

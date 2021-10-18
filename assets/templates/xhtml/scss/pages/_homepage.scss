@@ -246,7 +246,7 @@
 			vertical-align: baseline;
 		}
 		@include respond('tab-port') {
-			margin-left:0 !important;
+			margin-right:0 !important;
 		}
 	}
 	@include respond('tab-land') {

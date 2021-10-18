@@ -78,9 +78,6 @@
 
 .auth-form{
     padding: 50px 50px;
-	@include respond('phone') {
-		padding: 30px;
-	}	
     .btn{
         height: 50px;
         font-weight: 700;

@@ -122,11 +122,6 @@ a {
 			padding-right: 30px;
 			padding-left: 30px;
 		}
-		@include custommq($max: 767px) {
-			padding-top: 20px;
-			padding-right: 20px;
-			padding-left: 20px;
-		}
 		@include custommq($max: 575px) {
 			padding-top: 15px;
 			padding-right: 15px;

@@ -2,9 +2,7 @@
 table#example{
     padding: 0rem 0 2rem 0;
 }
-table.dataTable{
-    font-size: 14px;
-}
+
 #example2_wrapper {
     .dataTables_scrollBody {
         max-height: 33.25rem !important;
@@ -69,19 +67,19 @@ table.dataTable tfoot th{
 	&:active,
 	&:hover{
 		color: $primary !important;
-		background: $primary-light;
+		background: lighten($primary, 30);
 		border: 0 !important;
 		box-shadow: none;
 	}
 	&.current{
 		color: $primary !important;
-		background: $primary-light;
+		background: lighten($primary, 30);
 		border: 0 !important;
 	}
 	&.current:hover,
 	&.previous:hover,
 	&.next:hover{
-		background: $primary-light;
+		background: lighten($primary, 30);
 		color: $primary !important;
 	}
 }
