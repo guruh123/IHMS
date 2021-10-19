@@ -4,7 +4,6 @@ function base_url($a=''){
     return $getbase_url.$a;
 }
 
-
 function assets($a=''){
     $getbase_assets=$GLOBALS['setUri']['assets'];
     return base_url($getbase_assets.$a);
