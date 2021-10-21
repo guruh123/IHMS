@@ -24,48 +24,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php include '_layouts/head.php'?>
-    <body>
-
-    <!--*******************
-        Preloader start
-    ********************-->
-    <div id="preloader">
-        <div class="sk-three-bounce">
-            <div class="sk-child sk-bounce1"></div>
-            <div class="sk-child sk-bounce2"></div>
-            <div class="sk-child sk-bounce3"></div>
-        </div>
-    </div>
-    <!--*******************
-        Preloader end
-    ********************-->
-
-    <!--**********************************
-        Main wrapper start
-    ***********************************-->
-    <div id="main-wrapper">
-      <?php
-        include '_layouts/header.php';
-        include '_layouts/sidebar.php';
-      ?>
-        <div class="content-body">
-            <?php
-              echo $halaman;
-            ?>
-        </div>
-        <div class="footer">
-            <div class="copyright">
-                <p><strong>Integrated Hospital Asset Management</strong> © 2021 All Rights Reserved</p>            </div>
-        </div>
-    </div>
-    <?php
-      include '_layouts/javascript.php';
-    ?>
-</body>
     <body class="hold-transition skin-blue sidebar-mini">
       <div class="wrapper">
         <?php
-            
+            include '_layouts/header.php';
+            include '_layouts/sidebar.php';
+            echo $halaman;
+            include '_layouts/footer.php';
+            include '_layouts/javascript.php';
         ?>
       </div>
     </body>

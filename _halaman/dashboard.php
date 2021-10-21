@@ -2,7 +2,6 @@
  $title="Hospital Management System";
 ?>
 
-
    <!--**********************************
             Content body start
         ***********************************-->
@@ -138,52 +137,118 @@
                         </div>
                     </div>
 
-                    <div class="card-body">
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="user" role="tabpanel">
-                                <canvas id="activity" class="chartjs"></canvas>
+
+		<div class="col-xl-12 col-lg-12 col-xxl-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Log Aktivitas Tenaga Medis</h4>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="col-xl-6 col-xxl-6 col-lg-12 col-md-12">
-            <div class="card">
-                <div class="card-header border-0 pb-0">
-                    <h4 class="card-title">Pasien (%)</h4>
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-dark dropdown-toggle light" data-toggle="dropdown" aria-expanded="false">
-                            Mingguan
-                        </button>
-                        <div class="dropdown-menu" >
-                            <a class="dropdown-item" href="#">Harian</a>
-                            <a class="dropdown-item" href="#">Mingguan</a>
-                            <a class="dropdown-item" href="#">Tahunan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body pt-2">
-                    <h4 class="text-dark font-w400">Total Pasien</h4>
-                    <h3 class="text-primary font-w600">720 Orang</h3>
-                    <div class="row mx-0 align-items-center">
-                        <div class="col-sm-8 col-md-7  px-0">
-                            <div id="chartCircle"></div>
-                        </div>
-                        <div class="col-sm-4 col-md-5 px-0">
-                            <div class="patients-chart-deta">
-                                <div class="col px-0">
-                                    <span class="bg-danger"></span>	
-                                    <div>
-                                        <p>Bayi</p>
-                                        <h3>64%</h3>
-                                    </div>
-                                </div>
-                                <div class="col px-0">
-                                    <span class="bg-success"></span>	
-                                    <div>
-                                        <p>Dewasa</p>
-                                        <h3>36%</h3>
-                                    </div>
+                            <div class="card-body">
+                                <div class="table-responsive recentOrderTable">
+                                    <table class="table verticle-middle table-responsive-md">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Tag ID</th>
+                                                <th scope="col">Nama</th>
+                                                <th scope="col">Function</th>
+                                                <th scope="col">Tanggal Masuk</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>12</td>
+												<td>dr. Bobby</td>
+                                                <td>Dokter Umum</td>
+                                                <td>01 August 2020</td>
+                                                <td><span class="badge badge-rounded badge-success">Hadir</span></td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+                                                        <div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+														<div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10 </td>
+                                                <td>Dexter, Amd, Kep</td>
+                                                <td>Perawat</td>
+												<td>31 July 2020</td>
+                                                <td><span class="badge badge-rounded badge-success">Hadir</span></td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+                                                        <div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03 </td>
+                                                <td>drg. Nathan</td>
+                                                <td>Dokter Gigi</td>
+												<td>30 July 2020</td>
+                                                <td><span class="badge badge-rounded badge-danger">Absen</span></td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+                                                        <div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>Aurora, Skep</td>
+                                                <td>Perawat</td>
+												<td>29 July 2020</td>
+                                                <td><span class="badge badge-rounded badge-success">Hadir</span></td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+														<div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>06</td>
+                                                <td>Matthew, S.Kebid</td>
+                                                <td>Bidan</td>
+												<td>28 July 2020</td>
+                                                <td><span class="badge badge-rounded badge-success">Hadir</span></td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+														<div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+														<div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <!-- {{-- <div class="col px-0">
                                     <span class="bg-warning"></span>	

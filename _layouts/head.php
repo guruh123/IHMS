@@ -10,8 +10,16 @@
     <link href="<?=templates()?>vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?=templates()?>vendor/chartist/css/chartist.min.css">
     <link href="<?=templates()?>css/style.css" rel="stylesheet">
-	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-    <link href="<?=templates()?>vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/f4559b5252.js" crossorigin="anonymous"></script>
+
+
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
+    <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
 </head>
+
+
