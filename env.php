@@ -13,10 +13,10 @@ $template='templates/xhtml/';
 $img='img/';
 
 //session
-$_SESSION['prefix']='RS';
+$_SESSION['prefix']='IHAM';
 
 //URI
-$setUri['base']='http://localhost/RS/';
+$setUri['base']='http://localhost/IHAM/';
 $setUri['assets']='assets/';
 
 // $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
