@@ -118,263 +118,12 @@
 
 
 
-
-   <!--**********************************
-            Chart Aktivitas Pasien
-        ***********************************-->    
-
-                <div class="row">
-					<div class="col-xl-6 col-xxl-6 col-lg-6 col-md-6">
-						<div class="card">
-							<div class="card-header border-0 pb-0">
-							<h4 class="card-title">Aktivitas Pasien</h4>
-								<div class="dropdown ml-auto">
-									<div class="btn-link" data-toggle="dropdown">
-										<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" rx="9" ry="3"></circle><circle fill="#000000"cx="12" cy="5" rx="9" ry="3"></circle><circle fill="#000000" cx="12" cy="5" rx="9" ry="3"></circle></g></svg>
-									</div>
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="#">Edit</a>
-										<a class="dropdown-item" href="#">Delete</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-body px-3 pt-2">
-						<div id="chartStrock"></div>
-						</div>
-					</div>
-				</div>
-
-
-   <!--**********************************
-            Pasien Terakhir yang Ditambahkan
-        ***********************************-->  
-		
-		<div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
-								<div class="card">
-									<div class="card-header border-0 pb-0">
-										<h4 class="card-title">Recent Patient Activity</h4>
-										<div class="dropdown ml-auto">
-											<div class="btn-link" data-toggle="dropdown">
-												<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-											</div>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a class="dropdown-item" href="#">Edit</a>
-												<a class="dropdown-item" href="#">Delete</a>
-											</div>
-										</div>
-									</div>
-									<div class="card-body">
-										<div class="table-responsive ">
-											<table class="table patient-activity">
-												<tr>
-													<td>
-														<div class="media align-items-center">
-															<img class="mr-3 img-fluid rounded" width="78" src="./images/avatar/1.jpg" alt="DexignZone">
-															<div class="media-body">
-																<h5 class="mt-0 mb-1">Media heading</h5>
-																<p class="mb-0">41 Years Old</p>
-															</div>
-														</div>
-													</td>
-													<td>
-														<p class="mb-0">Disease</p>
-														<h5 class="my-0 text-primary">Allergies & Asthma</h5>
-													</td>
-													<td>
-														<div class="d-flex align-items-center">
-															<div>
-																<p class="mb-1">Status</p>
-																<h5 class="mt-0 mb-1 text-success">Recovered</h5>
-																<small>22/03/2020 12:34 AM</small>
-															</div>
-															<div class="dropdown ml-auto">
-																<div class="btn-link" data-toggle="dropdown">
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
-																</div>
-																<div class="dropdown-menu dropdown-menu-right" >
-																	<a class="dropdown-item" href="#">Edit</a>
-																	<a class="dropdown-item" href="#">Delete</a>
-																</div>
-															</div>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="media align-items-center">
-															<img class="mr-3 img-fluid rounded" width="78" src="./images/avatar/2.jpg" alt="DexignZone">
-															<div class="media-body">
-																<h5 class="mt-0 mb-1">Angela Nurhayati</h5>
-																<p class="mb-0">21 Years Old</p>
-															</div>
-														</div>
-													</td>
-													<td>
-														<p class="mb-0">Disease</p>
-														<h5 class="my-0 text-primary">Sleep Problem</h5>
-													</td>
-													<td>
-														<div class="d-flex align-items-center">
-															<div>
-																<p class="mb-1">Status</p>
-																<h5 class="mt-0 mb-1 text-danger">New Patient</h5>
-																<small>22/03/2020 12:34 AM</small>
-															</div>
-															<div class="dropdown ml-auto">
-																<div class="btn-link" data-toggle="dropdown">
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
-																</div>
-																<div class="dropdown-menu dropdown-menu-right">
-																	<a class="dropdown-item" href="#">Edit</a>
-																	<a class="dropdown-item" href="#">Delete</a>
-																</div>
-															</div>
-														</div>
-													</td>
-												</tr>
-												<tr class="active">
-													<td>
-														<div class="media align-items-center">
-															<img class="mr-3 img-fluid rounded" width="78" src="./images/avatar/3.jpg" alt="DexignZone">
-															<div class="media-body">
-																<h5 class="mt-0 mb-1">James Robinson</h5>
-																<p class="mb-0">25 Years Old</p>
-															</div>
-														</div>
-													</td>
-													<td>
-														<p class="mb-0">Disease</p>
-														<h5 class="my-0 text-primary">Dental Care</h5>
-													</td>
-													<td>
-														<div class="d-flex align-items-center">
-															<div>
-																<p class="mb-1">Status</p>
-																<h5 class="mt-0 mb-1 text-warning">In Treatment</h5>
-																<small>22/03/2020 12:34 AM</small>
-															</div>
-															<div class="dropdown ml-auto">
-																<div class="btn-link" data-toggle="dropdown">
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
-																</div>
-																<div class="dropdown-menu dropdown-menu-right">
-																	<a class="dropdown-item" href="#">Edit</a>
-																	<a class="dropdown-item" href="#">Delete</a>
-																</div>
-															</div>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="media align-items-center">
-															<img class="mr-3 img-fluid rounded" width="78" src="./images/avatar/4.jpg" alt="DexignZone">
-															<div class="media-body">
-																<h5 class="mt-0 mb-1">Thomas Jaja</h5>
-																<p class="mb-0">7 Years Old</p>
-															</div>
-														</div>
-													</td>
-													<td>
-														<p class="mb-0">Disease</p>
-														<h5 class="my-0 text-primary">Diabetes</h5>
-													</td>
-													<td>
-														<div class="d-flex align-items-center">
-															<div>
-																<p class="mb-1">Status</p>
-																<h5 class="mt-0 mb-1 text-danger">New Patient</h5>
-																<small>22/03/2020 12:34 AM</small>
-															</div>
-															<div class="dropdown ml-auto">
-																<div class="btn-link" data-toggle="dropdown">
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
-																</div>
-																<div class="dropdown-menu dropdown-menu-right">
-																	<a class="dropdown-item" href="#">Edit</a>
-																	<a class="dropdown-item" href="#">Delete</a>
-																</div>
-															</div>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="media align-items-center">
-															<img class="mr-3 img-fluid rounded" width="78" src="./images/avatar/5.jpg" alt="DexignZone">
-															<div class="media-body">
-																<h5 class="mt-0 mb-1">Cindy Brownleee</h5>
-																<p class="mb-0">71 Years Old</p>
-															</div>
-														</div>
-													</td>
-													<td>
-														<p class="mb-0">Disease</p>
-														<h5 class="my-0 text-primary">Covid-19 Suspect</h5>
-													</td>
-													<td>
-														<div class="d-flex align-items-center">
-															<div>
-																<p class="mb-1">Status</p>
-																<h5 class="mt-0 mb-1 text-success">Recovered</h5>
-																<small>22/03/2020 12:34 AM</small>
-															</div>
-															<div class="dropdown ml-auto">
-																<div class="btn-link" data-toggle="dropdown">
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
-																</div>
-																<div class="dropdown-menu dropdown-menu-right">
-																	<a class="dropdown-item" href="#">Edit</a>
-																	<a class="dropdown-item" href="#">Delete</a>
-																</div>
-															</div>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="media align-items-center">
-															<img class="mr-3 img-fluid rounded" width="78" src="./images/avatar/6.jpg" alt="DexignZone">
-															<div class="media-body">
-																<h5 class="mt-0 mb-1">Oconner Jr.</h5>
-																<p class="mb-0">17 Years Old</p>
-															</div>
-														</div>
-													</td>
-													<td>
-														<p class="mb-0">Disease</p>
-														<h5 class="my-0 text-primary">Dental Care</h5>
-													</td>
-													<td>
-														<div class="d-flex align-items-center">
-															<div>
-																<p class="mb-1">Status</p>
-																<h5 class="mt-0 mb-1 text-warning">In Treatment</h5>
-																<small>22/03/2020 12:34 AM</small>
-															</div>
-															<div class="dropdown ml-auto">
-																<div class="btn-link" data-toggle="dropdown">
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
-																</div>
-																<div class="dropdown-menu dropdown-menu-right">
-																	<a class="dropdown-item" href="#">Edit</a>
-																	<a class="dropdown-item" href="#">Delete</a>
-																</div>
-															</div>
-														</div>
-													</td>
-												</tr>
-											</table>
-										</div>
-									</div>
-
-
    <!--**********************************
             Log Aktivitas Pasien
         ***********************************-->
 
 
-		<div class="col-xl-12 col-lg-12 col-xxl-12 col-sm-12">
+					<div class="col-xl-12 col-lg-12 col-xxl-12 col-sm-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Log Aktivitas Pasien</h4>
@@ -389,13 +138,12 @@
                                                 <th scope="col">Diagnosa</th>
                                                 <th scope="col">Tanggal Masuk</th>
                                                 <th scope="col">Status</th>
-                                                <th scope="col">Bills</th>
-                                                <th scope="col"></th>
+                                                <th scope="col">More</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-										
-										<?php
+
+                                        <?php
 										$servername = "localhost";
 										$username = "root";
 										$password = "";
@@ -414,13 +162,14 @@ if (!$content) {
     printf("Error: %s\n", mysqli_error($kon));
     exit();}?>
 <?php while($data = mysqli_fetch_array($content)){?>
+
+
                                             <tr>
-												<td><?php echo $data['tag_id'];?></td>
-                                                <td><?php echo $data['nama_pasien'];?></td>
+                                                <td><?php echo $data['tag_id'];?></td>
+												<td><?php echo $data['nama_pasien'];?></td>
                                                 <td><?php echo $data['diagnosa'];?></td>
-												<td><?php echo $data['tanggal_masuk'];?></td>
+                                                <td><?php echo $data['tanggal_masuk'];?></td>
                                                 <td><span class="badge badge-rounded badge-primary"><?php echo $data['status'];?></span></td>
-                                                <td>$120</td>
                                                 <td>
                                                     <div class="dropdown custom-dropdown mb-0">
                                                         <div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
@@ -433,9 +182,8 @@ if (!$content) {
                                                     </div>
                                                 </td>
                                             </tr>
-											<?php
+                                            <?php
 											}
-
 											?>
 
                                             <tr>
@@ -444,7 +192,6 @@ if (!$content) {
                                                 <td>Pusing</td>
 												<td>31 July 2020</td>
                                                 <td><span class="badge badge-rounded badge-primary">Rawat Jalan</span></td>
-                                                <td>$540</td>
                                                 <td>
                                                     <div class="dropdown custom-dropdown mb-0">
                                                         <div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
@@ -463,7 +210,6 @@ if (!$content) {
                                                 <td>Vertigo</td>
 												<td>30 July 2020</td>
                                                 <td><span class="badge badge-rounded badge-primary">Rawat Jalan</span></td>
-                                                <td>$301 (opsional)</td>
                                                 <td>
                                                     <div class="dropdown custom-dropdown mb-0">
                                                         <div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
@@ -482,7 +228,6 @@ if (!$content) {
                                                 <td>Diare</td>
 												<td>29 July 2020</td>
                                                 <td><span class="badge badge-rounded badge-success">Rawat Inap</span></td>
-                                                <td>$099</td>
                                                 <td>
                                                     <div class="dropdown custom-dropdown mb-0">
 														<div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
@@ -501,7 +246,6 @@ if (!$content) {
                                                 <td>Pusing</td>
 												<td>28 July 2020</td>
                                                 <td><span class="badge badge-rounded badge-success">Rawat Jalan</span></td>
-                                                <td>$520</td>
                                                 <td>
                                                     <div class="dropdown custom-dropdown mb-0">
 														<div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
@@ -520,7 +264,6 @@ if (!$content) {
                             </div>
                         </div>
                     </div>
-					
 					
 
  

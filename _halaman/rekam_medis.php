@@ -368,13 +368,93 @@
 										</div>
 									</div>
 
-
+   <!--**********************************
+            Kotak-Kotak 4 (2)
+        ***********************************-->
+		<div class="row">	
+		<div class="col-xl-3 col-lg-6 col-sm-6">
+                        <div class="widget-stat card">
+							<div class="card-body p-4">
+								<div class="media ai-icon">
+									<span class="mr-3 bgl-success text-success">
+										<i class="fas fa-user-md"></i>
+											<path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+											<path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+										</svg>
+									</span>
+									<div class="media-body">
+										<p class="mb-1">Jumlah Dokter</p>
+										<h4 class="mb-0">364</h4>
+										<span class="badge badge-success">-3.5%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>	
+                    <div class="col-xl-3 col-lg-6 col-sm-6">
+                        <div class="widget-stat card">
+							<div class="card-body p-4">
+								<div class="media ai-icon">
+									<span class="mr-3 bgl-success text-success">
+										<i class="fas fa-user-md"></i>
+											<path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+											<path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+										</svg>
+									</span>
+									<div class="media-body">
+										<p class="mb-1">Jumlah Perawat</p>
+										<h4 class="mb-0">364</h4>
+										<span class="badge badge-success">-3.5%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>	
+                    <div class="col-xl-3 col-lg-6 col-sm-6">
+                        <div class="widget-stat card">
+							<div class="card-body p-4">
+								<div class="media ai-icon">
+									<span class="mr-3 bgl-success text-success">
+										<i class="fas fa-user-tie"></i>
+											<path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+											<path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+										</svg>
+									</span>
+									<div class="media-body">
+										<p class="mb-1">Jumlah Karyawan</p>
+										<h4 class="mb-0">364</h4>
+										<span class="badge badge-success">-3.5%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>	
+                    <div class="col-xl-3 col-lg-6 col-sm-6">
+                        <div class="widget-stat card">
+							<div class="card-body p-4">
+								<div class="media ai-icon">
+									<span class="mr-3 bgl-success text-success">
+										<i class="fas fa-wheelchair"></i> 
+											<path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+											<path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+										</svg>
+									</span>
+									<div class="media-body">
+										<p class="mb-1">Patient</p>
+										<h4 class="mb-0">364</h4>
+										<span class="badge badge-success">-3.5%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>				
+					
    <!--**********************************
             Log Aktivitas Pasien
         ***********************************-->
 
 
-		<div class="col-xl-12 col-lg-12 col-xxl-12 col-sm-12">
+					<div class="col-xl-12 col-lg-12 col-xxl-12 col-sm-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Log Aktivitas Pasien</h4>
@@ -394,32 +474,12 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-										
-										<?php
-										$servername = "localhost";
-										$username = "root";
-										$password = "";
-										$database = "dbpasien";
-
-										$kon= new mysqli($servername,
-										$username, $password, $database);
-										if (!$kon){
-											die("Database connection failed" . mysqli_connection_error());
-										}
-										?>
-										
-										<?php
-$content = mysqli_query($kon, "SELECT * FROM `tb_aktivitas_pasien` WHERE 1");
-if (!$content) {
-    printf("Error: %s\n", mysqli_error($kon));
-    exit();}?>
-<?php while($data = mysqli_fetch_array($content)){?>
                                             <tr>
-												<td><?php echo $data['tag_id'];?></td>
-                                                <td><?php echo $data['nama_pasien'];?></td>
-                                                <td><?php echo $data['diagnosa'];?></td>
-												<td><?php echo $data['tanggal_masuk'];?></td>
-                                                <td><span class="badge badge-rounded badge-primary"><?php echo $data['status'];?></span></td>
+                                                <td>12</td>
+												<td>Mr. Bobby</td>
+                                                <td>Diare</td>
+                                                <td>01 August 2020</td>
+                                                <td><span class="badge badge-rounded badge-primary">Rawat Inap</span></td>
                                                 <td>$120</td>
                                                 <td>
                                                     <div class="dropdown custom-dropdown mb-0">
@@ -433,11 +493,6 @@ if (!$content) {
                                                     </div>
                                                 </td>
                                             </tr>
-											<?php
-											}
-
-											?>
-
                                             <tr>
                                                 <td>10 </td>
                                                 <td>Mr. Dexter</td>
@@ -520,7 +575,6 @@ if (!$content) {
                             </div>
                         </div>
                     </div>
-					
 					
 
  

@@ -12,7 +12,7 @@
     <link href="./css/style.css" rel="stylesheet">
 	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 
-<?php include 'assets/templates/css/style.css'; ?>
+
 
    <!--**********************************
             Content body start
@@ -474,12 +474,32 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+										
+										<?php
+										$servername = "localhost";
+										$username = "root";
+										$password = "";
+										$database = "dbpasien";
+
+										$kon= new mysqli($servername,
+										$username, $password, $database);
+										if (!$kon){
+											die("Database connection failed" . mysqli_connection_error());
+										}
+										?>
+										
+										<?php
+$content = mysqli_query($kon, "SELECT * FROM `tb_aktivitas_pasien` WHERE 1");
+if (!$content) {
+    printf("Error: %s\n", mysqli_error($kon));
+    exit();}?>
+<?php while($data = mysqli_fetch_array($content)){?>
                                             <tr>
-                                                <td>12</td>
-												<td>Mr. Bobby</td>
-                                                <td>Diare</td>
-                                                <td>01 August 2020</td>
-                                                <td><span class="badge badge-rounded badge-primary">Rawat Inap</span></td>
+												<td><?php echo $data['tag_id'];?></td>
+                                                <td><?php echo $data['nama_pasien'];?></td>
+                                                <td><?php echo $data['diagnosa'];?></td>
+												<td><?php echo $data['tanggal_masuk'];?></td>
+                                                <td><span class="badge badge-rounded badge-primary"><?php echo $data['status'];?></span></td>
                                                 <td>$120</td>
                                                 <td>
                                                     <div class="dropdown custom-dropdown mb-0">
@@ -493,6 +513,11 @@
                                                     </div>
                                                 </td>
                                             </tr>
+											<?php
+											}
+
+											?>
+
                                             <tr>
                                                 <td>10 </td>
                                                 <td>Mr. Dexter</td>
@@ -601,12 +626,34 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+
+										<?php
+										$servername = "localhost";
+										$username = "root";
+										$password = "";
+										$database = "dbpasien";
+
+										$kon= new mysqli($servername,
+										$username, $password, $database);
+										if (!$kon){
+											die("Database connection failed" . mysqli_connection_error());
+										}
+										?>
+										
+										<?php
+$content = mysqli_query($kon, "SELECT * FROM `tb_aktivitas_tenaga_medis` WHERE 1");
+if (!$content) {
+    printf("Error: %s\n", mysqli_error($kon));
+    exit();}?>
+<?php while($data = mysqli_fetch_array($content)){?>
+
+
                                             <tr>
-                                                <td>12</td>
-												<td>dr. Bobby</td>
-                                                <td>Dokter Umum</td>
-                                                <td>01 August 2020</td>
-                                                <td><span class="badge badge-rounded badge-success">Hadir</span></td>
+                                                <td><?php echo $data['tag_id'];?></td>
+												<td><?php echo $data['nama_nakes'];?></td>
+                                                <td><?php echo $data['profesi'];?></td>
+                                                <td><?php echo $data['tanggal_masuk'];?></td>
+                                                <td><span class="badge badge-rounded badge-success"><?php echo $data['status'];?></span></td>
                                                 <td>
                                                     <div class="dropdown custom-dropdown mb-0">
                                                         <div class="btn sharp btn-primary tp-btn" data-toggle="dropdown">
@@ -619,6 +666,10 @@
                                                     </div>
                                                 </td>
                                             </tr>
+											<?php
+											}
+
+											?>
                                             <tr>
                                                 <td>10 </td>
                                                 <td>Dexter, Amd, Kep</td>
