@@ -17,11 +17,11 @@
 				</a>
                 <ul aria-expanded="false">
 					<li><a href="<?=url('pasien')?>">Pasien</a></li>
-					<li><a href="<?=url('pasien-dewasa')?>">Pasien Dewasa</a></li>
-					<li><a href="<?=url('pasien-anak')?>">Pasien anak - anak</a></li>
-					<li><a href="<?=url('rekam-medis')?>">Rekam Medis</a></li>
-					<li><a href="<?=url('log-data-pasien')?>">Log data Pasien</a></li>
-					<li><a href="<?=url('patient-details')?>">Patient Details</a></li>
+					<li><a href="<?=url('pasien_dewasa')?>">Pasien Dewasa</a></li>
+					<li><a href="<?=url('pasien_anak')?>">Pasien Anak - Anak</a></li>
+					<li><a href="<?=url('pasien_bayi')?>">Pasien Bayi</a></li>
+					<li><a href="<?=url('rekam_medis')?>">Rekam Medis</a></li>
+					<li><a href="<?=url('log_aktivitas_pasien')?>">Log Aktivitas Pasien</a></li>
 				</ul>
             </li>
 			<li>
